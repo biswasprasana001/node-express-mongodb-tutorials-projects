@@ -13,8 +13,7 @@ const {
 router.route("/").post(createJob).get(getAllJobs);
 router
   .route("/:id")
-  .post(getJob)
-  .get(getAllJobs)
+  .get(getJob)
   .delete(deleteJob)
   .patch(updateJob);
 
